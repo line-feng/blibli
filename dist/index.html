@@ -1,38 +1,16 @@
-<!DOCTYPE html>
-<html lang=en>
-	<head>
-		<meta name=referrer content=no-referrer>
-		<meta charset=utf-8>
-		<meta http-equiv=X-UA-Compatible content="IE=edge">
-		<meta name=viewport content="width=device-width,initial-scale=1">
-		<link rel=icon href=http://118.89.244.215/favicon.ico> <title>blibli</title>
-		<link href=http://118.89.244.215/css/app.9fe0b3ea.css rel=preload as=style>
-		<link href=http://118.89.244.215/css/chunk-vendors.1472305c.css rel=preload as=style>
-		<link href=http://118.89.244.215/js/app.46c57212.js rel=preload as=script>
-		<link href=http://118.89.244.215/js/chunk-vendors.06ef7a7c.js rel=preload as=script>
-		<link href=http://118.89.244.215/css/chunk-vendors.1472305c.css rel=stylesheet>
-		<link href=http://118.89.244.215/css/app.9fe0b3ea.css rel=stylesheet>
-	</head>
-	<body><noscript><strong>We're sorry but blibli doesn't work properly without JavaScript enabled. Please enable it to
-				continue.</strong></noscript>
-		<div id=app></div>
-		<script src=http://118.89.244.215/js/chunk-vendors.06ef7a7c.js> </script> <script src=http://118.89.244.215/js/app.46c57212.js>
-		 </script> </body> <script>
-			// 设置 rem 函数
-			function setRem() {
+<!DOCTYPE html><html lang=en><head><meta name=referrer content=no-referrer><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=http://118.89.244.215/dist/favicon.ico><title>blibli</title><link href=http://118.89.244.215/dist/css/app.9fe0b3ea.css rel=preload as=style><link href=http://118.89.244.215/dist/css/chunk-vendors.1472305c.css rel=preload as=style><link href=http://118.89.244.215/dist/js/app.9adb4f45.js rel=preload as=script><link href=http://118.89.244.215/dist/js/chunk-vendors.06ef7a7c.js rel=preload as=script><link href=http://118.89.244.215/dist/css/chunk-vendors.1472305c.css rel=stylesheet><link href=http://118.89.244.215/dist/css/app.9fe0b3ea.css rel=stylesheet></head><body><noscript><strong>We're sorry but blibli doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=http://118.89.244.215/dist/js/chunk-vendors.06ef7a7c.js></script><script src=http://118.89.244.215/dist/js/app.9adb4f45.js></script></body><script>// 设置 rem 函数
+		function setRem() {
 
-				// 320 默认大小16px; 320px = 20rem ;每个元素px基础上/16
-				let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
-				//得到html的Dom元素
-				let htmlDom = document.getElementsByTagName('html')[0];
-				//设置根元素字体大小
-				htmlDom.style.fontSize = htmlWidth / 20 + 'px';
-			}
-			// 初始化
-			setRem();
-			// 改变窗口大小时重新设置 rem
-			window.onresize = function() {
-				setRem()
-			}
-		</script>
-</html>
+			// 320 默认大小16px; 320px = 20rem ;每个元素px基础上/16
+			let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+			//得到html的Dom元素
+			let htmlDom = document.getElementsByTagName('html')[0];
+			//设置根元素字体大小
+			htmlDom.style.fontSize = htmlWidth / 20 + 'px';
+		}
+		// 初始化
+		setRem();
+		// 改变窗口大小时重新设置 rem
+		window.onresize = function() {
+			setRem()
+		}</script></html>
